@@ -22,7 +22,7 @@ is served here. No DNS change and no org membership needed.
 GitHub requires domain verification before the custom domain can be attached, and the record sits in a
 Route53 zone the reporter cannot write to. One TXT record completes the takeover:
 
-    _github-pages-challenge-Darshan060224.docs.dev.fornax.sciencecloud.nasa.gov  TXT  "<token>"
+    _github-pages-challenge-Darshan060224.docs.dev.fornax.sciencecloud.nasa.gov  TXT  "7af9abd8179a4ba3e00d32cc67d7b6"
 
 ## Files
 

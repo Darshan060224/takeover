@@ -1,0 +1,22 @@
+Required record to complete the takeover
+========================================
+
+Name : _github-pages-challenge-Darshan060224.docs.dev.fornax.sciencecloud.nasa.gov
+Type : TXT
+Value: 7af9abd8179a4ba3e00d32cc67d7b6
+TTL  : 300
+
+Zone : dev.fornax.sciencecloud.nasa.gov (Route53, ns-1180.awsdns-19.org)
+
+Why: GitHub Pages will not attach a custom domain until the domain is verified.
+Verification covers subdomains, so the same record on the parent zone
+fornax.sciencecloud.nasa.gov also clears docs.fornax.
+
+Precedent: the live host docs.fornax.sciencecloud.nasa.gov already carries
+_github-pages-challenge-nasa-fornax.docs.fornax.sciencecloud.nasa.gov
+TXT "a9cffd2a8b44d1cbb7354c242c480a" — this zone does this already.
+
+After the record propagates:
+  gh api -X PUT repos/Darshan060224/takeover/pages \
+    -f 'cname=docs.dev.fornax.sciencecloud.nasa.gov'
+then Enforce HTTPS on the Pages settings page.
