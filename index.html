@@ -20,6 +20,7 @@
   td { padding:.5rem .6rem; border-bottom:1px solid #1f2b3a; vertical-align:top; }
   td:first-child { color:#6e7f93; width:34%; font-family:ui-monospace,Menlo,monospace; font-size:.8rem; }
   .mono { font-family:ui-monospace,Menlo,monospace; font-size:.82rem; color:#e6edf3; }
+  .staged { background:#1b2431; border-left:3px solid #f0b429; padding:.7rem .9rem; border-radius:0 6px 6px 0; font-size:.86rem; }
   footer { margin-top:1.4rem; padding-top:1.1rem; border-top:1px solid #1f2b3a;
            font-size:.83rem; color:#6e7f93; }
   a { color:#58a6ff; }
@@ -28,6 +29,7 @@
 <body>
 <div class="card">
   <span class="badge">Subdomain Takeover — PoC</span>
+  <p class="staged">Staged claim — this page is live at darshan060224.github.io/takeover. GitHub is holding the custom domain pending a verification TXT record in the NASA zone.</p>
   <h1><span class="host">docs.dev.fornax.sciencecloud.nasa.gov</span></h1>
   <p>This NASA-owned hostname has a dangling DNS record pointing at
      <span class="mono">nasa-fornax.github.io</span>, a GitHub Pages site that no longer exists.
